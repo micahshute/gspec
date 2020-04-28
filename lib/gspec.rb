@@ -1,6 +1,6 @@
-require "genspec/version"
+require "gspec/version"
 
-module Genspec
+module Gspec
   class Error < StandardError; end
   # Your code goes here...
 end
