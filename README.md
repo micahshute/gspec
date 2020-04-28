@@ -1,8 +1,16 @@
 # Gspec
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/gspec`. To experiment with that code, run `bin/console` for an interactive prompt.
+`bundle add gspec`
 
-TODO: Delete this and the text above, and describe your gem
+go into your Rakefile and paste the following code:
+
+```ruby
+pec = Gem::Specification.find_by_name 'gspec'
+load "#{spec.gem_dir}/lib/gspec/tasks/generator.rake"
+```
+create a test file with:
+
+`rake spec:create_for[Your::Class:Name::Here]`
 
 ## Installation
 

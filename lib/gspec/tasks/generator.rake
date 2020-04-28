@@ -6,9 +6,10 @@ namespace :spec do
 
     desc "Create test file for a class" 
     task :create_for, [:name] => :file_utils do |task, args|  
-        Dir.mkdir(__dir__ + '/spec') unless Dir.exist?(__dir__ + "/spec")
+        file = Dir.pwd
+        Dir.mkdir(file + '/spec') unless Dir.exist?(file + "/spec")
         
-        starting_file = __dir__ + "/spec"
+        starting_file = file + "/spec"
         klass = args[:name]
         proj_name = __dir__.split('/').last.downcase
         path_components = klass.split('::')
