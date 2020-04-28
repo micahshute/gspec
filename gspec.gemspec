@@ -2,7 +2,7 @@ require_relative 'lib/gspec/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "gspec"
-  spec.version       = gspec::VERSION
+  spec.version       = Gspec::VERSION
   spec.authors       = ["Micah Shute"]
   spec.email         = ["micah.shute@gmail.com"]
 
