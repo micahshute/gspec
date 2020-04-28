@@ -1,13 +1,12 @@
-require_relative 'lib/genspec/version'
+require_relative 'lib/gspec/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "genspec"
-  spec.version       = Genspec::VERSION
+  spec.name          = "gspec"
+  spec.version       = gspec::VERSION
   spec.authors       = ["Micah Shute"]
   spec.email         = ["micah.shute@gmail.com"]
 
-  spec.summary       = %q{TODO: Write a short summary, because RubyGems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
+  spec.summary       = %q{Add a rake task to quickly generate rspec files}
   spec.homepage      = "TODO: Put your gem's website or public repo URL here."
   spec.license       = "MIT"
   spec.required_ruby_version = Gem::Requirement.new(">= 2.3.0")

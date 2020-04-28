@@ -1,5 +1,5 @@
 require "bundler/setup"
-require "genspec"
+require "gspec"
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
