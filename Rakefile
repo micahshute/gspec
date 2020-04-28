@@ -1,7 +1,7 @@
 require "bundler/gem_tasks"
 require "rspec/core/rake_task"
 
-import './lib/tasks/generator.rake'
+import './lib/gspec/tasks/generator.rake'
 
 RSpec::Core::RakeTask.new(:spec)
 
