@@ -5,7 +5,7 @@
 go into your Rakefile and paste the following code:
 
 ```ruby
-pec = Gem::Specification.find_by_name 'gspec'
+spec = Gem::Specification.find_by_name 'gspec'
 load "#{spec.gem_dir}/lib/gspec/tasks/generator.rake"
 ```
 create a test file with:
