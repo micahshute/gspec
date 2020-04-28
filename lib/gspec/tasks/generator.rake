@@ -11,7 +11,7 @@ namespace :spec do
         
         starting_file = file + "/spec"
         klass = args[:name]
-        proj_name = __dir__.split('/').last.downcase
+        proj_name = file.split('/').last.downcase
         path_components = klass.split('::')
         namespace = path_components.shift if path_components.first.downcase == proj_name
         dirs = path_components[0...-1].map{|d| d.gsub(/(\w)([A-Z])/, '\1_\2').downcase}
