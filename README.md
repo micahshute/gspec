@@ -30,7 +30,7 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Not made for rails projects, which have their own generators anyway. Made for small projects, and compatable for gems using the bundler filetree setup. See above for instructions.
 
 ## Development
 
